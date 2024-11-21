@@ -9,11 +9,14 @@
     */
 
     //ENTRADA
-
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    const novoSUV = prompt("Qual carro deseja adicionar na lista?")
 
     //PROCESSAMENTO
-
-
-    //SAÍDA
-
+    if (novoSUV) {
+        carrosSUV.push(novoSUV);
+    } else {
+        alert(`Lista antiga: "Tiggo", "Sportage", "Tucson", "EcoSport" <br>
+        Lista nova : ${carrosSUV.slice(0, -1)} `);
+    }
 </script>

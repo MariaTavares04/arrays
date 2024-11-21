@@ -9,11 +9,16 @@
     */
 
     //ENTRADA
-
+    const palavra = prompt("Digite uma palavra:").toLowerCase
+    const letra = prompt("Informe a letra que deseja encontrar na palavra que digitou:").toLowerCase
 
     //PROCESSAMENTO
+    const indice = palavra.indexOf(letra);
 
-
-    //SAÍDA
+    if (indice  !== -1) {
+        alert(`A letra ${letra} foi encontrada na palavra na posição ${indice + 1}`);
+    } else {
+        alert(`A letra ${letra} não foi encontrada na palavra`);
+    }
 
 </script>

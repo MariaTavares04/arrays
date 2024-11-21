@@ -19,6 +19,19 @@
     alert(`A lista de carros disponíveis são: ${carrosSUV}, <br> 
         ${carrosSedan}, ${carrosHatch}`); 
     
-    const adicionar = prompt("Informe mais três veículos para serem inseridos na lista. E identifique o tipo de veículo que deseja inserir: SUV, Sedan ou Hatch: ");
+    const veiculo = prompt("Digite o nome do veículo que deseja inserir:").toLowerCase
+    const tipo = prompt("Qual o tipo do veículo? (SUV, Sedan, Hatch)").toLowerCase
+
+    if (tipo === "suv") {
+        carrosSUV.push(veiculo);
+    } else if (tipo === "sedan") {
+        carrosSedan.push(veiculo);
+    } else if (tipo === "hatch") {
+        carrosHatch.push(veiculo)
+    }
+
+    alert(`Carros SUV: ${carrosSUV}`);
+    alert(`Carros Sedan: ${carrosSedan}`);
+    alert(`Carros Hatch: ${carrosHatch}`)
 
 </script>
